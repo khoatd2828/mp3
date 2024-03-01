@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+          <!-- Header -->
+          <header>
+            <h4>Now playing:</h4>
+            <h2>String 57th & 9th</h2>
+          </header>
+      
+          <!-- CD -->
+          <div class="cd">
+            <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+            </div>
+          </div>
+      
+          <!-- Control -->
+          <div class="control">
+            <div class="btn btn-repeat">
+              <i class="fas fa-redo"></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class="fas fa-pause icon-pause"></i>
+              <i class="fas fa-play icon-play"></i>
+            </div>
+            <div class="btn btn-next">
+              <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="btn btn-random">
+              <i class="fas fa-random"></i>
+            </div>
+          </div>
+      
+          <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+      
+          <audio id="audio" src=""></audio>
+        </div>
+      
+        <!-- Playlist -->
+        <div class="playlist">
+          
+        </div>
+      </div>
+      <script src="./java.js"></script>
+      <!-- <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        const app = {
+            songs: [
+                {
+                    name: 'Đánh Đổi',
+                    singer: 'Obito',
+                    path: './mp3/DanhDoi-Obito-11836728.mp3',
+                    image: './img/DD.jpg'
+                },
+            
+                {
+                    name: 'Bật Tình Yêu Lên',
+                    singer: 'Hòa Minzy',
+                    path: './mp3/BatTinhYeuLen-TangDuyTanHoaMinzy-8715666.mp3',
+                    image: './img/BTYL.jpg'
+                },
+                
+                {
+                    name: 'Đại Minh Tinh',
+                    singer: 'Văn Mai Hương',
+                    path: './mp3/DaiMinhTinh-VanMaiHuongHuaKimTuyen-11747544.mp3',
+                    image: './img/DMT.jpg'
+                },
+            
+                {
+                    name: 'Exit Sign',
+                    singer: 'Obito',
+                    path: './mp3/ExitSign-HIEUTHUHAI-11966367.mp3',
+                    image: './img/ES.jpg'
+                },
+            
+                {
+                    name: 'Như Anh Đã Thấy Em',
+                    singer: 'Obito',
+                    path: './mp3/NhuAnhDaThayEm-PhucXPFreakD-7370334.mp3',
+                    image: './img/NADTE.jpg'
+                },
+            
+                {
+                    name: 'Rồi Ta Sẽ Ngắm Pháo Hoa Cùng Nhau',
+                    singer: 'Obito',
+                    path: './mp3/RoiTaSeNgamPhaoHoaCungNhau-OlewVietNam-8485329.mp3',
+                    image: './img/RTSNPHCN.jpg'
+                },
+            
+                {
+                    name: 'Từng Quen',
+                    singer: 'Wren Evan',
+                    path: './mp3/TungQuen-WrenEvansitsnk-12038297.mp3',
+                    image: './img/TQ.jpg'
+                }
+            ],
+            render: function() {
+                console.log(123)
+            },
+            start: function() {
+                this.render()
+            }
+        }
+        app.start()
+
+      </script> -->
+</body>
+</html>
